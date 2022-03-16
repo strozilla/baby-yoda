@@ -1,0 +1,233 @@
+/***Top Section***/
+
+#bg-video {
+  z-index: -1;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: -9em;
+  min-width: 100vw;
+  max-height: 50em;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url(./images/logo.svg);
+  background-size: 5em;
+  width: 6em;
+}
+
+.navbar-collapse.show .logo {
+  display: none;
+}
+
+.navbar-collapse.show ul {
+  margin-left: 4em;
+}
+
+.navbar-collapse.show .bg-success {
+  width: 8em;
+  padding-left: 1em;
+  margin-left: -2em; 
+}
+.nav-link.bg-success {
+  border-radius: .5em;
+  width: 8em;
+  padding-left: 2em !important;
+}
+
+.top-section {
+  position: relative;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  margin-left: 5em;
+  max-width: 450px;
+  color: #fff;
+}
+
+
+/***Background Section***/
+#background {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  position: relative;
+  margin-top: auto;
+}
+
+#background div h1{
+  display: block;
+  width: 100%;
+  height: 3em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.soup {
+  width: 20em;
+  height: 30em;
+  margin-right: 1rem;
+  object-fit: cover;
+  border-radius: 0 15px 15px 0;
+}
+
+.stroller, .yoda-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  height: 14.5em;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+.stroller {
+  margin-bottom: 1rem;
+}
+
+/*Slide component*/
+
+.carousel-caption {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  top: 2em !important;
+}
+
+.carousel-caption h1 {
+  display: block;
+  width: 100%;
+}
+.carousel-caption img {
+  object-fit: cover;
+}
+
+.slide-info {
+  display: flex;
+  flex-direction: row;
+}
+.slide-info-heading {
+  width: 100%;
+}
+.slide-info-heading h2{
+  margin-left: -10em;
+}
+
+.slide-info-caption{
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+  height: 10em;
+  width: 25em;
+}
+
+/*Skills section*/
+#skills h1 {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.skill-numbers  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5em auto 1em auto;
+}
+
+.skill-numbers div {
+  align-content: center;
+}
+
+.skill-number {
+  margin: .2em auto;
+  text-align: center;
+  line-height: 1em;
+  width: 30%;
+}
+.skill-number p{
+ width: 100% !important;
+ margin-top: .5em;
+  color: #000;
+  font-size: small;
+  width: max-content;
+}
+
+.skill-number-box {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: auto;
+}
+.skill-number-box h5 {
+  margin: .1em auto;
+  font-weight: 700 !important;
+  font-size: 2rem;
+}
+
+.hr {
+  position: absolute;
+  border-top: 3px solid #000;
+  border-bottom: 2px solid #000;
+  background-color: lightblue;
+  height: 1em;
+  width: 100%;
+  margin-top: 5.8em !important;
+  right: -3px;
+  z-index: -1;
+}
+
+/***Friends or Foe Section***/
+.ff-heading {
+  text-align: center;
+}
+
+/***make responsive***/
+@media (max-width: 767px) {
+    #ffSlides .carousel-item > div {
+        display: none;
+    }
+    #ffSlides .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+#ffSlides .carousel-item.active,
+#ffSlides .carousel-item-next,
+#ffSlides .carousel-item-prev {
+    display: flex;
+    justify-content: center;
+}
+
+/*** medium and up screens ***/
+@media (min-width: 768px) {
+    
+    #ffSlides .carousel-item-end.active,
+    #ffSlides .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    #ffSlides .carousel-item-start.active, 
+    #ffSlides .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+
+#ffSlides .card {
+  padding: .5em;
+}
+#ffSlides img {
+  border-radius: 10px;
+}
+
+#ffSlides .carousel-item-end,
+#ffSlides .carousel-item-start { 
+  transform: translateX(0);
+}
+
+#ffSlides .carousel-control-prev, .carousel-control-next {
+  width: 50%;
+}
