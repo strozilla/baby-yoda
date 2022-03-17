@@ -180,8 +180,21 @@
 }
 
 /***Friends or Foe Section***/
+
+#friend-foe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-bottom: 2em;
+}
+
 .ff-heading {
   text-align: center;
+}
+
+.ffSlides {
+  width: 950px;
 }
 
 /***make responsive***/
@@ -215,12 +228,18 @@
     }
 }
 
-
+#ffSlides .carousel-item {
+  width: auto !important;
+  margin-left: auto;
+}
 #ffSlides .card {
-  padding: .5em;
+  padding: .2em;
 }
 #ffSlides img {
   border-radius: 10px;
+  width: auto !important;
+  height: 13em !important;
+  max-height: 10em;
 }
 
 #ffSlides .carousel-item-end,
@@ -229,5 +248,23 @@
 }
 
 #ffSlides .carousel-control-prev, .carousel-control-next {
-  width: 50%;
+  width: 10%;
+}
+#ffSlides .carousel-control-next-icon, .carousel-control-prev-icon {
+ filter: invert(100%);
+ height: 4em;
+ width: 4em;
+}
+
+
+/****Favorite Foods****/
+#favorite-foods {
+  text-align: center;
+}
+
+.food {
+  text-align: center;
+}
+.food img {
+  width: 2em;
 }
