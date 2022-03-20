@@ -25,7 +25,7 @@ p {
   margin-top: .1em;
   z-index: 10;
 }
-#navbar .container-fluid {
+#navbarNav {
   z-index: 15;
 }
 .navbar-expand-lg.sticky {
