@@ -13,3 +13,19 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
+//sticky-nav
+
+window.onscroll = function () { myFunction() }
+
+let navbar = document.getElementById("navbar")
+let sticky = navbar.offsetTop
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky")
+    document.getElementById("navLogo").setAttribute("src", "./images/logosticky.svg")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
