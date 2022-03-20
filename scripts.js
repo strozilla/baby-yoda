@@ -27,5 +27,6 @@ function myFunction() {
     document.getElementById("navLogo").setAttribute("src", "./images/logosticky.svg")
   } else {
     navbar.classList.remove("sticky");
+    document.getElementById("navLogo").setAttribute("src", "./images/logosticky.svg")
   }
 }
