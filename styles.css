@@ -59,12 +59,11 @@ p {
   background-size: 5em;
   width: 6em;
 }
-
-div.collapse.navbar-collapse.show .logo {
-  display: none;
+.navbar-toggler-icon:active {
+  border: none;
 }
 
-div.collapse.show {
+ .navbar-nav{
   margin-left: 4em;
 }
 
@@ -116,6 +115,11 @@ div.collapse.show {
         .top-section {
           margin-left: 8em;
         }
+      }
+      @media (max-width: 992px) {
+        .navLogo{
+              display: none;
+            }
       }
 
 /***Background Section***/
