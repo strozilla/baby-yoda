@@ -117,7 +117,7 @@ p {
         }
       }
       @media (max-width: 992px) {
-        .navLogo{
+        #navLogo{
               display: none;
             }
       }
@@ -304,6 +304,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   margin: 2em auto 1em auto;
+  max-width: 200px;
 }
 
 .skill-numbers div {
@@ -311,12 +312,12 @@ p {
 }
 
 .skill-number {
-  margin: 0 2em;
+  margin: 0 auto;
   text-align: center;
   line-height: 1em;
 }
 .skill-number h4 {
-  font-size: clamp(3rem, 1rem + 1vw, 6rem) !important;
+  font-size: clamp(3rem, 6rem) !important;
   margin-top: .2em;
 }
 .skill-number p{
