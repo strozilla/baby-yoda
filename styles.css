@@ -301,10 +301,10 @@ p {
 
 .skill-numbers  {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 2em auto 1em auto;
-  max-width: 200px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: .5em;
 }
 
 .skill-numbers div {
@@ -314,7 +314,6 @@ p {
 .skill-number {
   margin: 0 auto;
   text-align: center;
-  line-height: 1em;
 }
 .skill-number h4 {
   font-size: clamp(3rem, 6rem) !important;
@@ -322,7 +321,7 @@ p {
 }
 .skill-number p{
  max-width: 20rem;
- width: max-content;
+ width: 80%;
  margin: .5em auto;
  color: #000;
  font-size: small;
@@ -330,8 +329,9 @@ p {
 }
 
 .skill-number-box {
-  max-height: 3.5rem;
-  max-width: 3.5rem;
+
+  height: 3.5rem;
+  width: 3.5rem;
   border: 1px solid #009C74;
   background-color: #009C74;
   border-radius: 50%;
@@ -345,25 +345,31 @@ p {
 }
 
 .hr {
-  position: absolute;
-  border-top: 6px solid #000;
-  border-bottom: 6px solid #000;
-  background-color: #009C74;
-  height: 1.5em;
-  width: 100%;
-  margin-top: 2.6em !important;
-  right: -3px;
-  z-index: -1;
+  display: none;
 }
 
     /***mobile***/
-    @media (max-width: 500px) {
+    @media (min-width: 768px) {
       .hr {
-        display: none;
+        display: block;
+         position: absolute;
+          border-top: 6px solid #000;
+          border-bottom: 6px solid #000;
+          background-color: #009C74;
+          height: 1.5em;
+          width: 100%;
+          margin-top: 2em !important;
+          right: -3px;
+          z-index: -1;
       }
       .skill-numbers {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        max-width: 90%;
+        padding-top: 1em;
+        margin-bottom: 1em;
       }
     }
 
