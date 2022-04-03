@@ -410,6 +410,7 @@ p {
 
 #ffSlides .carousel-inner {
   max-height: 15em;
+  margin-left: -5em;
 }
 
 #ffSlides .carousel-item.active,
@@ -421,7 +422,8 @@ p {
 
 #ffSlides .carousel-item {
   width: auto !important;
-  margin-left: auto;
+  margin-left: 2em;
+  margin-right: 0 !important;
 }
 #ffSlides .card {
   padding: .2em;
@@ -472,7 +474,7 @@ p {
             }
             @media (max-width: 1300px) {
               #ffSlides .carousel-inner {
-                  margin-left: -5em;
+                  margin-left: -1em;
                 }
             }
 
